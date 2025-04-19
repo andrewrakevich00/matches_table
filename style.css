@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+table {
+    border: 2px solid black;        /* рамка таблицы */
+    border-collapse: collapse;      /* объединение границ */
+    margin: 20px auto;              /* выравнивание по центру */
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid gray;         /* рамка ячеек */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    font-size: 20px;      /* размер шрифта*/
+}
+
+tr:hover {
+    background-color: gray;      /* подсветка при наведении */
+}
