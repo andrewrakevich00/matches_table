@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+<!--    Атрибут class в HTML используется для назначения CSS-классов элементам. Это позволяет группировать несколько элементов с одинаковыми стилями и применить к ним одну и ту же стилизацию через CSS.-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="/connection.html" method="post">
+ <label for="review">Ваша оценка</label><br>
+    <select name="review" id="review">
+    <option value="/">-</option>
+    <option value="fabulous">Великолепно</option>
+    <option value="super">Супер</option>
+    <option value="good">Хорошо</option>
+    <option value="badly">Не понравилось</option>
+    <option value="/">Свой ответ</option>
+    </select><br><br>
+
+    <label for="message">Ваш комментарий очень важен для нас</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" placeholder="Прокомментируйте пожалуйста..."></textarea><br><br>
+
+    <label for="anonymously">Хотите отправить эту форму анонимно?</label>
+    <fieldset>
+        <legend>Выберите что-то одно</legend>
+        <label>
+        <input type="checkbox" name="anonymously" value="Да,хочу отправить анонимно">
+        Да,хочу отправить ананимно
+        </label><br><br>
+        <label>
+        <input type="checkbox" name="anonymously" value="Мне нечего скрывать">
+        Мне нечего скрывать
+        </label>
+    </fieldset><br><br>
+    <input type="submit" value="Отправить"><br><br>
+</form>
+</body>
+</html>
